@@ -1,0 +1,49 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block  title %}About{% endblock title %}
+
+{% block banner-slider %}
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static "app/images/banner/b1.jpg" %}" class="d-block w-100 h-60" alt="Banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "app/images/banner/b2.jpg" %}" class="d-block w-100" alt="Banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "app/images/banner/b3.jpg" %}" class="d-block w-100" alt="Banner">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "app/images/banner/b4.jpg" %}" class="d-block w-100" alt="Banner">
+      </div>
+     </div>
+  </div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">Welcome to DIGISAB CONSULT, 
+        your trusted source for fresh,high-quality fruits and 
+        vegetables. As an agriculture-focused eCommerce business, 
+        we bring farm-fresh produce directly to your door, bridging
+        the gap between local growers and consumers with 
+        convenience, quality, and care.</p>
+    </div>
+    <br><br>
+    <h2 class="text-center">Mission</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">Our mission is to provide our customers
+        with fresh, healthy, and sustainably sourced produce 
+        while supporting local agriculture. We believe in making nutritious
+        food accessible to everyone, allowing you to enjoy the best 
+        seasonal fruits and vegetables with ease and trust.</p>
+    </div>
+</div>
+<br><br>
+{% endblock main-content %}
